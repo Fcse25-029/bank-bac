@@ -1,0 +1,15 @@
+{
+  "name": "BANK BAC",
+  "image": "mcr.microsoft.com/devcontainers/java:1-17",
+  "features": {
+    "ghcr.io/devcontainers/features/java:1": { "version": "17", "installMaven": "true" },
+    "ghcr.io/devcontainers/features/desktop-lite:1": {}
+  },
+  "forwardPorts": [6080],
+  "portsAttributes": {
+    "6080": { "label": "Desktop (password: vscode)", "onAutoForward": "notify" }
+  },
+  "customizations": {
+    "vscode": { "extensions": ["vscjava.vscode-java-pack"] }
+  }
+}
